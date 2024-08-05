@@ -1,0 +1,17 @@
+const images = [
+    'img/065.jpg',
+    'img/alfonso.jpg',
+];
+
+let currentIndex = 0;
+
+function changeBackgroundImage() {
+    document.body.style.backgroundImage = `url('${images[currentIndex]}')`;
+    currentIndex = (currentIndex + 1) % images.length;
+}
+
+// Cambia la imagen de fondo cada 5 segundos (5000 ms)
+setInterval(changeBackgroundImage, 5000);
+
+// Inicializa con la primera imagen
+changeBackgroundImage();
