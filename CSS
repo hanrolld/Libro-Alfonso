@@ -1,0 +1,68 @@
+
+@font-face {
+    font-family: 'TheBoldFont';
+    src: url('fonts/TheBoldFont.ttf') format('truetype');
+}header {
+    background-color: skyblue;
+    color: #4E75F8;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body {
+    margin: 0;
+    font-family: 'TheBoldFont', Arial, sans-serif;
+    background-image: url(img/alfonso.jpg);
+    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: 0.5% center;
+}
+.content h2{
+    size: 20px;
+    color: #ff6329;
+    margin-top: 30px;
+}
+
+.content h1{
+    color: #ff6329;
+    font-size: 100px;
+    margin-top: 0.5px;
+    margin-bottom: 0% ;
+}
+.content p{
+    width: 600px;
+    word-wrap: break-word;
+    color: white;
+}
+
+.header {
+    width: 200px;
+    height: 100vh;
+    background-color:  #ff6329;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.header a:hover {
+    background-color: darkorange;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
