@@ -1,46 +1,17 @@
-
 @font-face {
     font-family: 'TheBoldFont';
     src: url('fonts/TheBoldFont.ttf') format('truetype');
-}header {
-    background-color: skyblue;
-    color: #4E75F8;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  body {
-    margin: 0;
-    font-family: 'TheBoldFont', Arial, sans-serif;
-    background-image: url(img/alfonso.jpg);
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    background-position: 0.5% center;
-}
-.content h2{
-    size: 20px;
-    color: #ff6329;
-    margin-top: 30px;
 }
 
-.content h1{
-    color: #ff6329;
-    font-size: 100px;
-    margin-top: 0.5px;
-    margin-bottom: 0% ;
-}
-.content p{
-    width: 600px;
-    word-wrap: break-word;
-    color: white;
+body {
+    margin: 0;
+    font-family: 'TheBoldFont', Arial, sans-serif;
 }
 
 .header {
     width: 200px;
     height: 100vh;
-    background-color:  #ff6329;
+    background-color: #ff6329;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,4 +36,67 @@
 .content {
     margin-left: 220px;
     padding: 20px;
+}
+
+.title-image {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    color: #ff6329;
+    font-size: 100px;
+    margin-top: 0.5px;
+    margin-bottom: 0;
+}
+
+.scroll-block {
+    flex:1 ;
+    width: calc(300px - 20px); /* Ajusta el ancho del bloque con scroll */
+    height: auto;
+    overflow-y: auto;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px; /* Añade un margen a la derecha */
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.scroll-content {
+    height: 300px; /* Ajusta la altura máxima del bloque para controlar la cantidad de texto visible */
+    overflow-y: auto; /* Habilita el scroll vertical */
+    padding-right: 10px; /* Añade un pequeño padding para que el texto no quede pegado al scroll */
+    scrollbar-width: thin; /* Estiliza el ancho de la barra de scroll en navegadores compatibles */
+}
+
+
+
+.scroll-content img {
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+.scroll-content p {
+    color: #333;
+    text-align: justify;
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.large-block {
+    background-color:  #f5f5f5;
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 15px; /* Añade un margen a la derecha */
+    border-radius: 8px;
+    width: calc(100% - 60px); /* Ajusta el ancho para dejar espacio a la derecha */
 }
